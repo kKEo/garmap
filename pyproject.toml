@@ -1,0 +1,35 @@
+[project]
+name = "garmap"
+version = "0.1.0"
+description = "Build routable, cycling-tuned Garmin .img maps covering a GPX route"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "click>=8.1",
+    "gpxpy>=1.6",
+    "shapely>=2.0",
+    "pyproj>=3.6",
+    "requests>=2.31",
+    "tqdm>=4.66",
+]
+
+[project.optional-dependencies]
+contours = ["pyhgtmap>=3.4"]
+
+[project.scripts]
+garmap = "garmap.cli:entrypoint"
+
+[dependency-groups]
+dev = ["pytest>=8.0"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/garmap"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["integration: hits the network and runs the Java tools (deselect with -m 'not integration')"]
+addopts = "-m 'not integration'"

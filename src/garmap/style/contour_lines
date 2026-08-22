@@ -1,0 +1,18 @@
+# garmap replacement for mkgmap's default inc/contour_lines.
+#
+# The shipped version converts elevations to feet ('${ele|conv:m=>ft}').
+# Cyclists outside the US read climbs in metres, and pyhgtmap emits `ele` in
+# metres, so we label them as-is.
+
+contour=elevation & contour_ext=elevation_minor
+	{ name '${ele}' }
+	[0x20 resolution 23]
+contour=elevation & contour_ext=elevation_medium
+	{ name '${ele}' }
+	[0x21 resolution 21]
+contour=elevation & contour_ext=elevation_major
+	{ name '${ele}' }
+	[0x22 resolution 20]
+contour=elevation | contour_ext=elevation
+	{ name '${ele}' }
+	[0x21 resolution 20]

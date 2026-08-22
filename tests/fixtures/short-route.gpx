@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="garmap" xmlns="http://www.topografix.com/GPX/1/1">
+  <trk><name>Podhale test loop</name><trkseg>
+      <trkpt lat="49.3" lon="19.95"/>
+      <trkpt lat="49.31" lon="19.99"/>
+      <trkpt lat="49.29" lon="20.03"/>
+      <trkpt lat="49.27" lon="20.08"/>
+      <trkpt lat="49.28" lon="20.13"/>
+      <trkpt lat="49.3" lon="20.18"/>
+      <trkpt lat="49.33" lon="20.22"/>
+      <trkpt lat="49.31" lon="20.26"/>
+      <trkpt lat="49.29" lon="20.3"/>
+      <trkpt lat="49.27" lon="20.34"/>
+  </trkseg></trk>
+</gpx>

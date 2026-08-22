@@ -1,0 +1,27 @@
+
+# ------------------------------------------------------------------
+# garmap: signed cycle route networks.
+#
+# Appended to mkgmap's default `relations` file. Every rule here is an
+# action-only block, so appending is order-safe: no rule assigns a Garmin type
+# and none can shadow a rule above it.
+#
+# Relations are processed before the `lines` rules, and the default style's
+# `lines` file takes way names straight from the `name` tag (it does not include
+# inc/name). Writing the route reference into `name` here is therefore all that
+# is needed for the Edge to show "which signed route am I on" on the map and in
+# the turn list.
+# ------------------------------------------------------------------
+
+type=route & (route=bicycle | route=mtb) & (ref=* | name=*)
+{
+    # Prefer the short signed reference; fall back to the full name.
+    set garmap:cycleref='${ref}' | '${name}';
+
+    apply {
+        # $(name) is the *member way's* name; ${...} would read the relation's
+        # own tags and so would throw the road name away.
+        # Accumulates when a way carries several routes: "Lane (EV4) (R-12)".
+        set name='$(name) (${garmap:cycleref})' | '(${garmap:cycleref})';
+    }
+}

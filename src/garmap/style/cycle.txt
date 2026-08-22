@@ -1,0 +1,114 @@
+; garmap cycling TYP file
+; -*- coding: UTF-8 -*-
+;
+; Restyles the line types mkgmap's default style already assigns, rather than
+; introducing custom types: Garmin only routes over line types below 0x14, and
+; custom types (0x10000+) are not routable. So the cycling emphasis lives here,
+; in the rendering, while routability stays intact.
+;
+; Colours are picked for legibility on the Edge 1040's small, often
+; sunlight-washed screen: high contrast, no thin pale lines.
+
+[_id]
+;FID and ProductCode come from mkgmap's --family-id / --product-id
+CodePage=65001
+[End]
+
+;=================== CYCLING INFRASTRUCTURE ===================
+
+; Dedicated cycleway - the most important line on the map, so it is the
+; widest and most saturated.
+[_line]
+Type=0x11
+UseOrientation=N
+LineWidth=6
+BorderWidth=1
+Xpm="0 0 2 0"
+"1 c #0050C8"
+"2 c #FFFFFF"
+String1=0x04,Cycleway
+ExtendedLabels=Y
+FontStyle=SmallFont
+[end]
+
+; Track / unpaved road. Brown says "expect gravel"; narrower than a cycleway
+; so a glance distinguishes them without reading labels.
+[_line]
+Type=0x0a
+UseOrientation=N
+LineWidth=4
+BorderWidth=1
+Xpm="0 0 2 0"
+"1 c #8C5A28"
+"2 c #E6D2B4"
+String1=0x04,Track
+ExtendedLabels=Y
+FontStyle=SmallFont
+[end]
+
+; Path / footway. Rideable sometimes, so visible but clearly minor.
+[_line]
+Type=0x16
+UseOrientation=N
+LineWidth=2
+BorderWidth=0
+Xpm="0 0 2 0"
+"1 c #786464"
+"2 c #FFFFFF"
+String1=0x04,Path
+FontStyle=SmallFont
+[end]
+
+; Residential street - dial it back so cycleways stand out against it.
+[_line]
+Type=0x06
+UseOrientation=N
+LineWidth=4
+BorderWidth=1
+Xpm="0 0 2 0"
+"1 c #FFFFFF"
+"2 c #A0A0A0"
+FontStyle=SmallFont
+[end]
+
+;=================== CONTOURS ===================
+; Subtle enough not to compete with the route line, distinct enough to read
+; the shape of a climb. Major contours carry the elevation label.
+
+[_line]
+Type=0x20
+UseOrientation=N
+LineWidth=1
+BorderWidth=0
+Xpm="0 0 1 0"
+"1 c #C89664"
+FontStyle=NoLabel
+[end]
+
+[_line]
+Type=0x21
+UseOrientation=N
+LineWidth=1
+BorderWidth=0
+Xpm="0 0 1 0"
+"1 c #B4783C"
+FontStyle=SmallFont
+[end]
+
+[_line]
+Type=0x22
+UseOrientation=N
+LineWidth=2
+BorderWidth=0
+Xpm="0 0 1 0"
+"1 c #96501E"
+FontStyle=SmallFont
+[end]
+
+;=================== POINTS OF INTEREST ===================
+; Deliberately not overridden. The default style already emits the types that
+; matter on a ride -- drinking water (0x5000), bike shop (0x2f13), cafe
+; (0x2a0e), toilets (0x2f0c), station (0x2f08) -- and Garmin's built-in icons
+; for them are clear. A [_point] override here would have to supply its own
+; bitmap (mkgmap rejects the section without one), and hand-drawn icons would
+; be a downgrade.
