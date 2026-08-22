@@ -28,6 +28,8 @@ $ uv run garmap doctor           # checks Java, jars, optional deps, disk
 `brew install libmtp` is optional but recommended on macOS — see
 [Getting the map onto the device](#getting-the-map-onto-the-device).
 
+`resources/` holds two real routes to try it on — see [Examples](#examples).
+
 ## How it works
 
 1. **Route** — every `<trk>` segment and `<rte>` in the GPX is read. Waypoints are
@@ -73,6 +75,65 @@ Useful `build` options:
 - `--sea` — sea polygons, for coastal routes.
 - `--keep-work --work-dir ./work -v` — keep the intermediates and stream the Java
   tools' output. Reach for this first when something goes wrong.
+
+## Examples
+
+Two real routes ship in `resources/`, one hilly and one flat, and between them they cover most of
+the decisions you'll actually have to make. No output is quoted below — run `preview` and read
+your own numbers off it, which is the habit worth building anyway.
+
+### Lajkonik — 242 km in the Beskid Niski
+
+```console
+$ uv run garmap preview resources/Lajkonik_250km_.final.gpx --buffer 8km
+$ uv run garmap build resources/Lajkonik_250km_.final.gpx \
+      --buffer 8km --contours --name "Lajkonik 2025" -o lajkonik.img
+$ uv run garmap install lajkonik.img
+```
+
+- 242 km of track in 6736 points, between 242 m and 762 m of elevation. That range is why
+  `--contours` is worth its size here: on this route the contour lines tell you what the next
+  hour is going to feel like.
+- **Preview first.** Corridor area grows with route length *and* buffer, so 8 km either side of
+  242 km of track is a far bigger download than 8 km either side of a 30 km loop. The preview
+  legend gives you the figure before anything is fetched.
+- The corridor runs along the małopolskie/podkarpackie boundary, which is exactly the case the
+  greedy set cover in step 3 exists for. The preview page shows which extracts it settled on, and
+  that choice is what the download size mostly comes down to.
+- `--name` matters more than it looks: the family id is derived from it, and two maps sharing a
+  family id make each other invisible or corrupt. One name per trip.
+
+### Sudovia GRVL — 181 km of gravel near the Lithuanian border
+
+```console
+$ uv run garmap preview "resources/Sudovia GRVL KLASYK 20-05-26.gpx" --buffer 6km
+$ uv run garmap build "resources/Sudovia GRVL KLASYK 20-05-26.gpx" \
+      --buffer 6km --contours --contour-step 20 \
+      --name "Sudovia 2026" -o sudovia.img
+```
+
+- **Quote the path.** This filename has spaces in it; unquoted, the shell hands garmap three
+  arguments and it fails on the first one that isn't a file.
+- Gravel is where the cycling TYP earns its keep: `highway=track` draws brown and clearly
+  distinct from a thin grey path, so a wrong turn onto a footpath is visible on the Edge's screen
+  rather than something you discover by pushing the bike.
+- 181 km between 123 m and 281 m — flat. `--contour-step 10` would draw a great many nearly
+  meaningless lines, so 20 m is the sensible interval. `--contours` still has to be there: it's
+  what fetches the elevation tiles that `--contour-step` then spaces out.
+- The north-east corner of this corridor is up against the Polish–Lithuanian border. Check the
+  preview: if the buffer spills over, a second country extract joins the build, and that single
+  fact can multiply the download. Tightening `--buffer` is the lever.
+
+### Several routes, one map
+
+```console
+$ uv run garmap preview resources/*.gpx --buffer 6km        # look before you build
+```
+
+`build` and `preview` both accept several GPX files, so the days of a tour can share one `.img`.
+The corridor is their union, though — and these two particular routes sit at opposite ends of
+Poland, so the set cover has to reach for something far larger than either route needs on its own.
+Preview it and read the estimate. Multi-GPX is for days that adjoin, not for unrelated rides.
 
 ## Cycling style
 
@@ -128,6 +189,9 @@ the only reliable route.
 $ uv run pytest                    # unit tests, offline, ~1s
 $ uv run pytest -m integration      # real download + real build, minutes
 ```
+
+`slides/` holds a Slidev deck — a beginner-friendly introduction and a full user guide.
+`cd slides && npm install && npm run dev`.
 
 The mkgmap and splitter versions are pinned in `src/garmap/config.py`: their
 download URLs contain the revision and upstream offers no `latest` alias, so
