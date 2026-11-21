@@ -1,0 +1,14 @@
+[book]
+title = "garmap"
+description = "User guide, internals and code review for garmap"
+language = "en"
+src = "src"
+
+[build]
+build-dir = "book"
+
+[output.html]
+default-theme = "light"
+preferred-dark-theme = "navy"
+git-repository-url = "https://github.com/kKEo/garmap"
+edit-url-template = "https://github.com/kKEo/garmap/edit/main/docs/{path}"

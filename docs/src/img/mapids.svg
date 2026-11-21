@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 412" width="1000" height="412" role="img" aria-labelledby="t d">
+<title id="t">Map id allocation</title>
+<desc id="d">splitter is given a block of 1000 map ids per extract starting at 63240001; contour tiles start at 63250001; mkgmap.args then renumbers OSM tiles consecutively.</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#5b6770"/></marker><marker id="ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0050C8"/></marker><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C8102E"/></marker><marker id="ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b7f4d"/></marker></defs>
+<rect x="0.5" y="0.5" width="999" height="411" rx="12" fill="#fbfaf7" stroke="#d9dde2"/>
+<text x="24.0" y="34.0" font-size="17" fill="#1f2933" text-anchor="start" font-weight="700" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">Map ids — two numbering steps</text>
+<text x="24.0" y="54.0" font-size="12" fill="#5b6770" text-anchor="start" font-weight="400" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">splitter names tile files from per-extract blocks; mkgmap.args then assigns the ids that end up in the .img.</text>
+<rect x="40" y="88" width="62" height="44" fill="#e6eefb" stroke="#0050C8" stroke-width="1.2"/>
+<text x="71.0" y="107.0" font-size="11.5" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">pass0</text>
+<text x="71.0" y="123.0" font-size="10" fill="#5b6770" text-anchor="middle" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">63240001</text>
+<rect x="102" y="88" width="62" height="44" fill="#e6eefb" stroke="#0050C8" stroke-width="1.2"/>
+<text x="133.0" y="107.0" font-size="11.5" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">pass1</text>
+<text x="133.0" y="123.0" font-size="10" fill="#5b6770" text-anchor="middle" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">63241001</text>
+<rect x="164" y="88" width="62" height="44" fill="#ffffff" stroke="#8a96a3" stroke-width="1.2"/>
+<text x="195.0" y="107.0" font-size="11.5" fill="#5b6770" text-anchor="middle" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">pass2</text>
+<text x="195.0" y="123.0" font-size="10" fill="#5b6770" text-anchor="middle" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">63242001</text>
+<rect x="226" y="88" width="62" height="44" fill="#ffffff" stroke="#8a96a3" stroke-width="1.2"/>
+<text x="257.0" y="107.0" font-size="11.5" fill="#5b6770" text-anchor="middle" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">pass3</text>
+<text x="257.0" y="123.0" font-size="10" fill="#5b6770" text-anchor="middle" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">63243001</text>
+<rect x="288" y="88" width="62" height="44" fill="#ffffff" stroke="#8a96a3" stroke-width="1.2"/>
+<text x="319.0" y="107.0" font-size="11.5" fill="#5b6770" text-anchor="middle" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">pass4</text>
+<text x="319.0" y="123.0" font-size="10" fill="#5b6770" text-anchor="middle" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">63244001</text>
+<rect x="350" y="88" width="62" height="44" fill="#ffffff" stroke="#8a96a3" stroke-width="1.2"/>
+<text x="381.0" y="107.0" font-size="11.5" fill="#5b6770" text-anchor="middle" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">pass5</text>
+<text x="381.0" y="123.0" font-size="10" fill="#5b6770" text-anchor="middle" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">63245001</text>
+<rect x="412" y="88" width="62" height="44" fill="#ffffff" stroke="#8a96a3" stroke-width="1.2"/>
+<text x="443.0" y="107.0" font-size="11.5" fill="#5b6770" text-anchor="middle" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">pass6</text>
+<text x="443.0" y="123.0" font-size="10" fill="#5b6770" text-anchor="middle" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">63246001</text>
+<rect x="474" y="88" width="62" height="44" fill="#ffffff" stroke="#8a96a3" stroke-width="1.2"/>
+<text x="505.0" y="107.0" font-size="11.5" fill="#5b6770" text-anchor="middle" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">pass7</text>
+<text x="505.0" y="123.0" font-size="10" fill="#5b6770" text-anchor="middle" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">63247001</text>
+<rect x="536" y="88" width="62" height="44" fill="#ffffff" stroke="#8a96a3" stroke-width="1.2"/>
+<text x="567.0" y="107.0" font-size="11.5" fill="#5b6770" text-anchor="middle" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">pass8</text>
+<text x="567.0" y="123.0" font-size="10" fill="#5b6770" text-anchor="middle" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">63248001</text>
+<rect x="598" y="88" width="62" height="44" fill="#ffffff" stroke="#8a96a3" stroke-width="1.2"/>
+<text x="629.0" y="107.0" font-size="11.5" fill="#5b6770" text-anchor="middle" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">pass9</text>
+<text x="629.0" y="123.0" font-size="10" fill="#5b6770" text-anchor="middle" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">63249001</text>
+<rect x="686" y="88" width="260" height="44" fill="#f4ebe0" stroke="#8C5A28" stroke-width="1.2"/>
+<text x="816.0" y="107.0" font-size="11.5" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">contour tiles</text>
+<text x="816.0" y="123.0" font-size="10" fill="#5b6770" text-anchor="middle" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">63250001 …</text>
+<text x="40.0" y="152.0" font-size="11.5" fill="#5b6770" text-anchor="start" font-weight="400" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">OSM range: 10 blocks × 1000 ids — one block per extract (MAPID_BLOCK, MAX_PASSES)</text>
+<text x="40.0" y="196.0" font-size="12.5" fill="#1f2933" text-anchor="start" font-weight="700" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">Tile files written by splitter</text>
+<rect x="40.0" y="206.0" width="218.0" height="36.0" rx="8" fill="#e6eefb" stroke="#0050C8" stroke-width="1.4"/>
+<text x="149.0" y="227.8" font-size="11.5" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">tiles/pass0/63240001.osm.pbf</text>
+<path d="M149.0,242.0 L149.0,330.0" fill="none" stroke="#5b6770" stroke-width="1.6" marker-end="url(#a)"/>
+<rect x="40.0" y="332.0" width="218.0" height="36.0" rx="8" fill="#ffffff" stroke="#8a96a3" stroke-width="1.4"/>
+<text x="149.0" y="354.0" font-size="12" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">mapname: 63240001</text>
+<rect x="274.0" y="206.0" width="218.0" height="36.0" rx="8" fill="#e6eefb" stroke="#0050C8" stroke-width="1.4"/>
+<text x="383.0" y="227.8" font-size="11.5" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">tiles/pass0/63240002.osm.pbf</text>
+<path d="M383.0,242.0 L383.0,330.0" fill="none" stroke="#5b6770" stroke-width="1.6" marker-end="url(#a)"/>
+<rect x="274.0" y="332.0" width="218.0" height="36.0" rx="8" fill="#ffffff" stroke="#8a96a3" stroke-width="1.4"/>
+<text x="383.0" y="354.0" font-size="12" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">mapname: 63240002</text>
+<rect x="508.0" y="206.0" width="218.0" height="36.0" rx="8" fill="#e6eefb" stroke="#0050C8" stroke-width="1.4"/>
+<text x="617.0" y="227.8" font-size="11.5" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">tiles/pass1/63241001.osm.pbf</text>
+<path d="M617.0,242.0 L617.0,330.0" fill="none" stroke="#5b6770" stroke-width="1.6" marker-end="url(#a)"/>
+<rect x="508.0" y="332.0" width="218.0" height="36.0" rx="8" fill="#ffffff" stroke="#8a96a3" stroke-width="1.4"/>
+<text x="617.0" y="354.0" font-size="12" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">mapname: 63240003</text>
+<rect x="742.0" y="206.0" width="218.0" height="36.0" rx="8" fill="#f4ebe0" stroke="#8C5A28" stroke-width="1.4"/>
+<text x="851.0" y="227.8" font-size="11.5" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">contours/lon…lat….osm.pbf</text>
+<path d="M851.0,242.0 L851.0,330.0" fill="none" stroke="#5b6770" stroke-width="1.6" marker-end="url(#a)"/>
+<rect x="742.0" y="332.0" width="218.0" height="36.0" rx="8" fill="#ffffff" stroke="#8a96a3" stroke-width="1.4"/>
+<text x="851.0" y="354.0" font-size="12" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">mapname: 63250001</text>
+<text x="627.0" y="290.0" font-size="11" fill="#9a6700" text-anchor="start" font-weight="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">renumbered: 63241001 → 63240003</text>
+<text x="40.0" y="392.0" font-size="12.5" fill="#1f2933" text-anchor="start" font-weight="700" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">Lines written to mkgmap.args</text>
+<text x="240.0" y="392.0" font-size="11.5" fill="#5b6770" text-anchor="start" font-weight="400" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">— ids run consecutively from OSM_MAPID and CONTOUR_MAPID, in tile order</text>
+</svg>

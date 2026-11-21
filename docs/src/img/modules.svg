@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 412" width="1000" height="412" role="img" aria-labelledby="t d">
+<title id="t">garmap module map</title>
+<desc id="d">cli.py drives nine feature modules; geofabrik and tools use http; splitter, mkgmap and style use tools; config holds pins and cache paths.</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#5b6770"/></marker><marker id="ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0050C8"/></marker><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C8102E"/></marker><marker id="ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b7f4d"/></marker></defs>
+<rect x="0.5" y="0.5" width="999" height="411" rx="12" fill="#fbfaf7" stroke="#d9dde2"/>
+<text x="24.0" y="34.0" font-size="17" fill="#1f2933" text-anchor="start" font-weight="700" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">Module map</text>
+<text x="24.0" y="54.0" font-size="12" fill="#5b6770" text-anchor="start" font-weight="400" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">Arrows are imports. cli.py imports each feature module lazily, inside the command that needs it.</text>
+<rect x="18.0" y="76.0" width="964.0" height="50.0" rx="8" fill="#e6eefb" stroke="#0050C8" stroke-width="1.4"/>
+<text x="500.0" y="98.5" font-size="14" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">cli.py</text>
+<text x="500.0" y="113.5" font-size="11" fill="#5b6770" text-anchor="middle" font-weight="400" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">click commands: build · preview · install · doctor · cache</text>
+<path d="M68.0,126.0 L68.0,168.0" fill="none" stroke="#0050C8" stroke-width="1.6" marker-end="url(#ab)"/>
+<rect x="18.0" y="170.0" width="100.0" height="56.0" rx="8" fill="#ffffff" stroke="#8a96a3" stroke-width="1.4"/>
+<text x="68.0" y="195.0" font-size="12.5" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">gpx.py</text>
+<text x="68.0" y="209.5" font-size="10.5" fill="#5b6770" text-anchor="middle" font-weight="400" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">gpxpy</text>
+<path d="M176.0,126.0 L176.0,168.0" fill="none" stroke="#0050C8" stroke-width="1.6" marker-end="url(#ab)"/>
+<rect x="126.0" y="170.0" width="100.0" height="56.0" rx="8" fill="#ffffff" stroke="#8a96a3" stroke-width="1.4"/>
+<text x="176.0" y="195.0" font-size="12.5" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">corridor.py</text>
+<text x="176.0" y="209.5" font-size="10.5" fill="#5b6770" text-anchor="middle" font-weight="400" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">shapely · pyproj</text>
+<path d="M284.0,126.0 L284.0,168.0" fill="none" stroke="#0050C8" stroke-width="1.6" marker-end="url(#ab)"/>
+<rect x="234.0" y="170.0" width="100.0" height="56.0" rx="8" fill="#ffffff" stroke="#8a96a3" stroke-width="1.4"/>
+<text x="284.0" y="195.0" font-size="12.5" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">geofabrik.py</text>
+<text x="284.0" y="209.5" font-size="10.5" fill="#5b6770" text-anchor="middle" font-weight="400" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">set cover</text>
+<path d="M392.0,126.0 L392.0,168.0" fill="none" stroke="#0050C8" stroke-width="1.6" marker-end="url(#ab)"/>
+<rect x="342.0" y="170.0" width="100.0" height="56.0" rx="8" fill="#ffffff" stroke="#8a96a3" stroke-width="1.4"/>
+<text x="392.0" y="195.0" font-size="12.5" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">splitter.py</text>
+<text x="392.0" y="209.5" font-size="10.5" fill="#5b6770" text-anchor="middle" font-weight="400" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">clip + tile</text>
+<path d="M500.0,126.0 L500.0,168.0" fill="none" stroke="#0050C8" stroke-width="1.6" marker-end="url(#ab)"/>
+<rect x="450.0" y="170.0" width="100.0" height="56.0" rx="8" fill="#ffffff" stroke="#8a96a3" stroke-width="1.4"/>
+<text x="500.0" y="195.0" font-size="12.5" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">contours.py</text>
+<text x="500.0" y="209.5" font-size="10.5" fill="#5b6770" text-anchor="middle" font-weight="400" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">pyhgtmap</text>
+<path d="M608.0,126.0 L608.0,168.0" fill="none" stroke="#0050C8" stroke-width="1.6" marker-end="url(#ab)"/>
+<rect x="558.0" y="170.0" width="100.0" height="56.0" rx="8" fill="#ffffff" stroke="#8a96a3" stroke-width="1.4"/>
+<text x="608.0" y="195.0" font-size="12.5" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">mkgmap.py</text>
+<text x="608.0" y="209.5" font-size="10.5" fill="#5b6770" text-anchor="middle" font-weight="400" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">compile</text>
+<path d="M716.0,126.0 L716.0,168.0" fill="none" stroke="#0050C8" stroke-width="1.6" marker-end="url(#ab)"/>
+<rect x="666.0" y="170.0" width="100.0" height="56.0" rx="8" fill="#ffffff" stroke="#8a96a3" stroke-width="1.4"/>
+<text x="716.0" y="195.0" font-size="12.5" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">style.py</text>
+<text x="716.0" y="209.5" font-size="10.5" fill="#5b6770" text-anchor="middle" font-weight="400" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">patch style</text>
+<path d="M824.0,126.0 L824.0,168.0" fill="none" stroke="#0050C8" stroke-width="1.6" marker-end="url(#ab)"/>
+<rect x="774.0" y="170.0" width="100.0" height="56.0" rx="8" fill="#ffffff" stroke="#8a96a3" stroke-width="1.4"/>
+<text x="824.0" y="195.0" font-size="12.5" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">preview.py</text>
+<text x="824.0" y="209.5" font-size="10.5" fill="#5b6770" text-anchor="middle" font-weight="400" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">Leaflet HTML</text>
+<path d="M932.0,126.0 L932.0,168.0" fill="none" stroke="#0050C8" stroke-width="1.6" marker-end="url(#ab)"/>
+<rect x="882.0" y="170.0" width="100.0" height="56.0" rx="8" fill="#ffffff" stroke="#8a96a3" stroke-width="1.4"/>
+<text x="932.0" y="195.0" font-size="12.5" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">device.py</text>
+<text x="932.0" y="209.5" font-size="10.5" fill="#5b6770" text-anchor="middle" font-weight="400" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">volume · MTP</text>
+<rect x="234.0" y="290.0" width="100.0" height="56.0" rx="8" fill="#eef1f4" stroke="#8a96a3" stroke-width="1.4"/>
+<text x="284.0" y="315.0" font-size="12.5" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">http.py</text>
+<text x="284.0" y="329.5" font-size="10.5" fill="#5b6770" text-anchor="middle" font-weight="400" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">requests · tqdm</text>
+<rect x="342.0" y="290.0" width="424.0" height="56.0" rx="8" fill="#eef1f4" stroke="#8a96a3" stroke-width="1.4"/>
+<text x="554.0" y="315.0" font-size="12.5" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">tools.py</text>
+<text x="554.0" y="329.5" font-size="10.5" fill="#5b6770" text-anchor="middle" font-weight="400" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">find Java · fetch + unpack jars · run_java()</text>
+<rect x="774.0" y="290.0" width="208.0" height="56.0" rx="8" fill="#eef1f4" stroke="#8a96a3" stroke-width="1.4"/>
+<text x="878.0" y="315.0" font-size="12.5" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">config.py</text>
+<text x="878.0" y="329.5" font-size="10.5" fill="#5b6770" text-anchor="middle" font-weight="400" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">version pins · cache paths · defaults</text>
+<path d="M284.0,226.0 L284.0,288.0" fill="none" stroke="#5b6770" stroke-width="1.6" marker-end="url(#a)"/>
+<path d="M392.0,226.0 L392.0,288.0" fill="none" stroke="#5b6770" stroke-width="1.6" marker-end="url(#a)"/>
+<path d="M608.0,226.0 L608.0,288.0" fill="none" stroke="#5b6770" stroke-width="1.6" marker-end="url(#a)"/>
+<path d="M716.0,226.0 L716.0,288.0" fill="none" stroke="#5b6770" stroke-width="1.6" marker-end="url(#a)"/>
+<path d="M382.0,346.0 L382.0,364.0 L284.0,364.0 L284.0,348.0" fill="none" stroke="#5b6770" stroke-width="1.6" marker-end="url(#a)"/>
+<text x="500.0" y="262.0" font-size="10.5" fill="#5b6770" text-anchor="middle" font-weight="400" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-style="italic">runs pyhgtmap itself</text>
+<text x="878.0" y="366.0" font-size="10.5" fill="#5b6770" text-anchor="middle" font-weight="400" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-style="italic">imported by six of the other modules</text>
+<text x="18.0" y="392.0" font-size="10.5" fill="#5b6770" text-anchor="start" font-weight="400" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-style="italic">gpx, corridor, preview and device depend on nothing else in the package.</text>
+</svg>

@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" width="1000" height="520" role="img" aria-labelledby="t d">
+<title id="t">Download cache decision flow</title>
+<desc id="d">http.download reuses a cached file younger than 14 days, revalidates older ones by ETag, and writes new downloads to a .part file before renaming.</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#5b6770"/></marker><marker id="ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0050C8"/></marker><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C8102E"/></marker><marker id="ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b7f4d"/></marker></defs>
+<rect x="0.5" y="0.5" width="999" height="519" rx="12" fill="#fbfaf7" stroke="#d9dde2"/>
+<text x="24.0" y="34.0" font-size="17" fill="#1f2933" text-anchor="start" font-weight="700" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">http.download() — when a cached file is reused</text>
+<text x="24.0" y="54.0" font-size="12" fill="#5b6770" text-anchor="start" font-weight="400" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">Used for Geofabrik extracts and for the mkgmap / splitter release zips.</text>
+<polygon points="275.0,110 400,75.0 525.0,110 400,145.0" fill="#fff4d6" stroke="#9a6700" stroke-width="1.4"/>
+<text x="400.0" y="106.5" font-size="12" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">file cached and</text>
+<text x="400.0" y="121.5" font-size="12" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">no --refresh?</text>
+<polygon points="275.0,210 400,175.0 525.0,210 400,245.0" fill="#fff4d6" stroke="#9a6700" stroke-width="1.4"/>
+<text x="400.0" y="206.5" font-size="12" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">younger than</text>
+<text x="400.0" y="221.5" font-size="12" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">14 days?</text>
+<polygon points="275.0,310 400,275.0 525.0,310 400,345.0" fill="#fff4d6" stroke="#9a6700" stroke-width="1.4"/>
+<text x="400.0" y="306.5" font-size="12" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">.etag sidecar</text>
+<text x="400.0" y="321.5" font-size="12" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">present?</text>
+<rect x="290.0" y="385.0" width="220.0" height="50.0" rx="8" fill="#ffffff" stroke="#8a96a3" stroke-width="1.4"/>
+<text x="400.0" y="406.5" font-size="12.5" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">HEAD</text>
+<text x="400.0" y="422.0" font-size="11.5" fill="#5b6770" text-anchor="middle" font-weight="400" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">If-None-Match: &lt;etag&gt;</text>
+<path d="M400.0,145.0 L400.0,175.0" fill="none" stroke="#5b6770" stroke-width="1.6" marker-end="url(#a)"/>
+<text x="416.0" y="164.0" font-size="11" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">yes</text>
+<path d="M400.0,245.0 L400.0,275.0" fill="none" stroke="#5b6770" stroke-width="1.6" marker-end="url(#a)"/>
+<text x="414.0" y="264.0" font-size="11" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">no</text>
+<path d="M400.0,345.0 L400.0,385.0" fill="none" stroke="#5b6770" stroke-width="1.6" marker-end="url(#a)"/>
+<text x="416.0" y="368.0" font-size="11" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">yes</text>
+<rect x="24.0" y="185.0" width="192.0" height="50.0" rx="8" fill="#e4f4ea" stroke="#1b7f4d" stroke-width="1.4"/>
+<text x="120.0" y="206.8" font-size="12.5" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">return cached file</text>
+<text x="120.0" y="221.8" font-size="11" fill="#5b6770" text-anchor="middle" font-weight="400" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">no network at all</text>
+<path d="M275.0,210.0 L216.0,210.0" fill="none" stroke="#5b6770" stroke-width="1.6" marker-end="url(#a)"/>
+<text x="250.0" y="203.0" font-size="11" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">yes</text>
+<rect x="24.0" y="360.0" width="192.0" height="50.0" rx="8" fill="#e4f4ea" stroke="#1b7f4d" stroke-width="1.4"/>
+<text x="120.0" y="381.8" font-size="12.5" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">return cached file</text>
+<text x="120.0" y="396.8" font-size="11" fill="#5b6770" text-anchor="middle" font-weight="400" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">304: mtime reset</text>
+<rect x="24.0" y="430.0" width="192.0" height="50.0" rx="8" fill="#e4f4ea" stroke="#1b7f4d" stroke-width="1.4"/>
+<text x="120.0" y="451.8" font-size="12.5" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">return cached file</text>
+<text x="120.0" y="466.8" font-size="11" fill="#5b6770" text-anchor="middle" font-weight="400" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">request failed: offline</text>
+<path d="M290.0,400.0 L216.0,388.0" fill="none" stroke="#5b6770" stroke-width="1.6" marker-end="url(#a)"/>
+<text x="252.0" y="386.0" font-size="11" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">304</text>
+<path d="M290.0,422.0 L216.0,452.0" fill="none" stroke="#5b6770" stroke-width="1.6" marker-end="url(#a)"/>
+<text x="252.0" y="452.0" font-size="11" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">error</text>
+<rect x="590.0" y="85.0" width="200.0" height="50.0" rx="8" fill="#e6eefb" stroke="#0050C8" stroke-width="1.4"/>
+<text x="690.0" y="106.5" font-size="12.5" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">GET, streamed</text>
+<text x="690.0" y="122.0" font-size="11.5" fill="#5b6770" text-anchor="middle" font-weight="400" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">into &lt;file&gt;.part</text>
+<path d="M525.0,110.0 L590.0,110.0" fill="none" stroke="#5b6770" stroke-width="1.6" marker-end="url(#a)"/>
+<text x="545.0" y="103.0" font-size="11" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">no</text>
+<path d="M525.0,310.0 L560.0,310.0 L560.0,126.0 L590.0,126.0" fill="none" stroke="#5b6770" stroke-width="1.6" marker-end="url(#a)"/>
+<text x="545.0" y="303.0" font-size="11" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">no</text>
+<path d="M510.0,410.0 L575.0,410.0 L575.0,131.0 L590.0,131.0" fill="none" stroke="#5b6770" stroke-width="1.6" marker-end="url(#a)"/>
+<text x="518.0" y="428.0" font-size="11" fill="#1f2933" text-anchor="start" font-weight="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">any other status</text>
+<polygon points="590.0,210 690,175.0 790.0,210 690,245.0" fill="#fff4d6" stroke="#9a6700" stroke-width="1.4"/>
+<text x="690.0" y="214.0" font-size="12" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">completed?</text>
+<path d="M690.0,135.0 L690.0,175.0" fill="none" stroke="#5b6770" stroke-width="1.6" marker-end="url(#a)"/>
+<rect x="590.0" y="285.0" width="200.0" height="50.0" rx="8" fill="#ffffff" stroke="#8a96a3" stroke-width="1.4"/>
+<text x="690.0" y="306.5" font-size="12.5" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">write .etag sidecar</text>
+<text x="690.0" y="322.0" font-size="11.5" fill="#5b6770" text-anchor="middle" font-weight="400" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">rename .part → file</text>
+<path d="M690.0,245.0 L690.0,285.0" fill="none" stroke="#5b6770" stroke-width="1.6" marker-end="url(#a)"/>
+<text x="706.0" y="268.0" font-size="11" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">yes</text>
+<rect x="590.0" y="375.0" width="200.0" height="50.0" rx="8" fill="#e4f4ea" stroke="#1b7f4d" stroke-width="1.4"/>
+<text x="690.0" y="404.2" font-size="12.5" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">return fresh file</text>
+<path d="M690.0,335.0 L690.0,375.0" fill="none" stroke="#5b6770" stroke-width="1.6" marker-end="url(#a)"/>
+<rect x="795.0" y="285.0" width="170.0" height="50.0" rx="8" fill="#ffffff" stroke="#8a96a3" stroke-width="1.4"/>
+<text x="880.0" y="314.2" font-size="12.5" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">delete .part</text>
+<path d="M790.0,210.0 L880.0,210.0 L880.0,285.0" fill="none" stroke="#5b6770" stroke-width="1.6" marker-end="url(#a)"/>
+<text x="838.0" y="203.0" font-size="11" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">request error</text>
+<rect x="795.0" y="375.0" width="170.0" height="50.0" rx="8" fill="#e4f4ea" stroke="#1b7f4d" stroke-width="1.4"/>
+<text x="880.0" y="396.5" font-size="12" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">old copy? return it</text>
+<text x="880.0" y="411.5" font-size="11" fill="#5b6770" text-anchor="middle" font-weight="400" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">(stale but usable)</text>
+<path d="M880.0,335.0 L880.0,375.0" fill="none" stroke="#5b6770" stroke-width="1.6" marker-end="url(#a)"/>
+<rect x="795.0" y="445.0" width="170.0" height="46.0" rx="8" fill="#fbe9ec" stroke="#C8102E" stroke-width="1.4"/>
+<text x="880.0" y="472.2" font-size="12.5" fill="#C8102E" text-anchor="middle" font-weight="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">else GarmapError</text>
+<path d="M880.0,425.0 L880.0,445.0" fill="none" stroke="#5b6770" stroke-width="1.6" marker-end="url(#a)"/>
+</svg>

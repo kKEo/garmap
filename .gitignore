@@ -1,1 +1,6 @@
 *.pyc
+docs/book/
+__pycache__/
+.venv/
+.pytest_cache/
+.coverage

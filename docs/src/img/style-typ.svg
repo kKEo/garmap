@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 470" width="1000" height="470" role="img" aria-labelledby="t d">
+<title id="t">Style and TYP</title>
+<desc id="d">The mkgmap default style is copied from the jar and patched in two places; the TYP file separately restyles existing line types; both feed mkgmap.</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#5b6770"/></marker><marker id="ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0050C8"/></marker><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C8102E"/></marker><marker id="ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b7f4d"/></marker></defs>
+<rect x="0.5" y="0.5" width="999" height="469" rx="12" fill="#fbfaf7" stroke="#d9dde2"/>
+<text x="24.0" y="34.0" font-size="17" fill="#1f2933" text-anchor="start" font-weight="700" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">Style decides what a way is; TYP decides how it looks</text>
+<text x="24.0" y="54.0" font-size="12" fill="#5b6770" text-anchor="start" font-weight="400" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">style.materialise() builds the left-hand branch for every build; the TYP source ships inside the package.</text>
+<rect x="30.0" y="84.0" width="200.0" height="60.0" rx="8" fill="#eef1f4" stroke="#8a96a3" stroke-width="1.4"/>
+<text x="130.0" y="111.0" font-size="13" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">mkgmap.jar</text>
+<text x="130.0" y="126.0" font-size="11" fill="#5b6770" text-anchor="middle" font-weight="400" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">styles/default/*</text>
+<path d="M230.0,114.0 L290.0,114.0" fill="none" stroke="#5b6770" stroke-width="1.6" marker-end="url(#a)"/>
+<text x="260.0" y="107.0" font-size="11" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">copy</text>
+<rect x="290.0" y="84.0" width="250.0" height="60.0" rx="8" fill="#ffffff" stroke="#8a96a3" stroke-width="1.4"/>
+<text x="415.0" y="111.0" font-size="13" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">&lt;work&gt;/cycle/</text>
+<text x="415.0" y="126.0" font-size="11" fill="#5b6770" text-anchor="middle" font-weight="400" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">a full copy of the default style</text>
+<rect x="30.0" y="172.0" width="200.0" height="38.0" rx="8" fill="#fff4d6" stroke="#9a6700" stroke-width="1.4"/>
+<text x="130.0" y="194.8" font-size="11.5" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">replace  inc/contour_lines</text>
+<path d="M230.0,191.0 L290.0,191.0" fill="none" stroke="#5b6770" stroke-width="1.6" marker-end="url(#a)"/>
+<text x="300.0" y="195.0" font-size="11.5" fill="#5b6770" text-anchor="start" font-weight="400" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">labels in metres, not feet</text>
+<rect x="30.0" y="218.0" width="200.0" height="38.0" rx="8" fill="#fff4d6" stroke="#9a6700" stroke-width="1.4"/>
+<text x="130.0" y="240.8" font-size="11.5" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">append  relations</text>
+<path d="M230.0,237.0 L290.0,237.0" fill="none" stroke="#5b6770" stroke-width="1.6" marker-end="url(#a)"/>
+<text x="300.0" y="241.0" font-size="11.5" fill="#5b6770" text-anchor="start" font-weight="400" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">cycle route ref → way name</text>
+<rect x="30.0" y="264.0" width="200.0" height="38.0" rx="8" fill="#fff4d6" stroke="#9a6700" stroke-width="1.4"/>
+<text x="130.0" y="286.8" font-size="11.5" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">rewrite  info</text>
+<path d="M230.0,283.0 L290.0,283.0" fill="none" stroke="#5b6770" stroke-width="1.6" marker-end="url(#a)"/>
+<text x="300.0" y="287.0" font-size="11.5" fill="#5b6770" text-anchor="start" font-weight="400" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">style summary</text>
+<path d="M290,144 V310 H540 V144" fill="none" stroke="#8a96a3" stroke-width="1.4"/>
+<path d="M540.0,114.0 L700.0,114.0 L700.0,196.0" fill="none" stroke="#0050C8" stroke-width="1.6" marker-end="url(#ab)"/>
+<text x="622.0" y="107.0" font-size="11" fill="#0050C8" text-anchor="middle" font-weight="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">--style-file</text>
+<rect x="30.0" y="368.0" width="200.0" height="60.0" rx="8" fill="#eef1f4" stroke="#8a96a3" stroke-width="1.4"/>
+<text x="130.0" y="395.0" font-size="13" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">style/cycle.txt</text>
+<text x="130.0" y="410.0" font-size="11" fill="#5b6770" text-anchor="middle" font-weight="400" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">TYP source, in the package</text>
+<path d="M230.0,398.0 L700.0,398.0 L700.0,262.0" fill="none" stroke="#8C5A28" stroke-width="1.6" marker-end="url(#a)"/>
+<text x="440.0" y="391.0" font-size="11" fill="#8C5A28" text-anchor="middle" font-weight="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">extra input file → compiled to cycle.typ</text>
+<rect x="610.0" y="198.0" width="180.0" height="62.0" rx="8" fill="#e6eefb" stroke="#0050C8" stroke-width="1.4"/>
+<text x="700.0" y="226.5" font-size="14" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">mkgmap r4924</text>
+<text x="700.0" y="241.5" font-size="11" fill="#5b6770" text-anchor="middle" font-weight="400" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">--route --index --gmapsupp</text>
+<path d="M790.0,229.0 L840.0,229.0" fill="none" stroke="#5b6770" stroke-width="1.6" marker-end="url(#a)"/>
+<rect x="840.0" y="204.0" width="130.0" height="50.0" rx="8" fill="#e4f4ea" stroke="#1b7f4d" stroke-width="1.4"/>
+<text x="905.0" y="233.2" font-size="12.5" fill="#1f2933" text-anchor="middle" font-weight="600" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">gmapsupp.img</text>
+<text x="726.0" y="296.0" font-size="12.5" fill="#1f2933" text-anchor="start" font-weight="700" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">Line types the TYP restyles</text>
+<path d="M726,318 h34" stroke="#0050C8" stroke-width="6" stroke-linecap="round"/>
+<text x="770.0" y="322.0" font-size="11.5" fill="#1f2933" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">0x11</text>
+<text x="826.0" y="322.0" font-size="11.5" fill="#5b6770" text-anchor="start" font-weight="400" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">cycleway</text>
+<path d="M726,338 h34" stroke="#8C5A28" stroke-width="4" stroke-linecap="round"/>
+<text x="770.0" y="342.0" font-size="11.5" fill="#1f2933" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">0x0a</text>
+<text x="826.0" y="342.0" font-size="11.5" fill="#5b6770" text-anchor="start" font-weight="400" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">track</text>
+<path d="M726,358 h34" stroke="#786464" stroke-width="2" stroke-linecap="round"/>
+<text x="770.0" y="362.0" font-size="11.5" fill="#1f2933" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">0x16</text>
+<text x="826.0" y="362.0" font-size="11.5" fill="#5b6770" text-anchor="start" font-weight="400" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">path</text>
+<path d="M726,378 h34" stroke="#A0A0A0" stroke-width="4" stroke-linecap="round"/>
+<text x="770.0" y="382.0" font-size="11.5" fill="#1f2933" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">0x06</text>
+<text x="826.0" y="382.0" font-size="11.5" fill="#5b6770" text-anchor="start" font-weight="400" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">residential</text>
+<path d="M726,398 h34" stroke="#B4783C" stroke-width="1.5" stroke-linecap="round"/>
+<text x="770.0" y="402.0" font-size="11.5" fill="#1f2933" text-anchor="start" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">0x20–22</text>
+<text x="826.0" y="402.0" font-size="11.5" fill="#5b6770" text-anchor="start" font-weight="400" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">contours</text>
+<text x="974.0" y="448.0" font-size="11" fill="#5b6770" text-anchor="end" font-weight="400" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-style="italic">No custom (0x10000+) types: they would draw but not route.</text>
+</svg>

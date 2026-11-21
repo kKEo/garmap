@@ -190,6 +190,9 @@ $ uv run pytest                    # unit tests, offline, ~1s
 $ uv run pytest -m integration      # real download + real build, minutes
 ```
 
+`docs/` holds an [mdBook](https://rust-lang.github.io/mdBook/) with a user guide, a description of the
+internals with diagrams, and a code review: `mdbook serve docs --open`.
+
 `slides/` holds a Slidev deck — a beginner-friendly introduction and a full user guide.
 `cd slides && npm install && npm run dev`.
 
